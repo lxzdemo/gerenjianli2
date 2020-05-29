@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>查看-大</title>
+    <desc>Created with Sketch.</desc>
+    <g id="查看-大" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" x="0" y="0" width="60" height="60"></rect>
+            <circle id="椭圆形" stroke="#FFFFFF" cx="30" cy="30" r="27"></circle>
+            <g id="查看-" transform="translate(18.000000, 18.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <rect id="矩形" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                <path d="M23.145,8.61 C20.61,5.175 16.89,3 12.735,3 C8.58,3 4.875,5.175 2.325,8.61 C1.2,10.125 1.2,12.375 2.325,13.89 C4.875,17.325 8.595,19.5 12.735,19.5 C16.89,19.5 20.595,17.325 23.145,13.89 C24.27,12.375 24.27,10.125 23.145,8.61 Z M12.75,16.5 C9.855,16.5 7.5,14.145 7.5,11.25 C7.5,8.355 9.855,6 12.75,6 C15.645,6 18,8.355 18,11.25 C18,14.145 15.645,16.5 12.75,16.5 Z M12.75,7.5 C10.68,7.5 9,9.18 9,11.25 C9,13.32 10.68,15 12.75,15 C14.82,15 16.5,13.32 16.5,11.25 C16.5,9.18 14.82,7.5 12.75,7.5 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>

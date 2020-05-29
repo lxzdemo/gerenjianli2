@@ -1,0 +1,93 @@
+var templateCopy = (function($){
+    var options = {
+        url: '',
+        dialog_btn_text: '',
+        dialog_lbtn_text: '',
+        dialog_rbtn_text: '',
+        dialog_ele: '',
+        dialog_text: '', 
+        dialog_text_err: '', 
+        dialog_redirect_url: '',
+        dialog_rbtn_url: '',
+        dialog_width: 500
+    };
+
+    // convert common template to personal template
+    var tmplCopyer = function(options) {
+        this.options = options;
+    }
+
+    tmplCopyer.prototype = {
+        convertToTemplate: function(crid, title, thumbnail_url) {
+            var that = this;
+            var options = that.options;
+            var params = {'crid': crid, 'title': title, 'thumbnail_url': thumbnail_url};
+            $.get(options.url, params, function(response) {
+                if(response.status == 0) {
+                    that.showDialog(title);
+                } else {
+                    that.showDialog(title, response.error, response.status);
+                }
+            });
+        },
+        showDialog: function(title, error, err_status) {
+            var options = this.options;
+            var buttons = [];
+            err_status = parseInt(err_status, 10);
+            if(err_status == 8){
+                buttons[0] = {
+                    'text': options.dialog_lbtn_text,
+                    'class': 'dialog_button leftButton',
+                    'click': function() {
+                        window.location.href = options.dialog_redirect_url;
+                    }
+                };
+                buttons[1] = {
+                    'text': options.dialog_rbtn_text,
+                    'class': 'dialog_button rightButton',
+                    'click': function() {
+                        if(typeof options.dialog_rbtn_url  != "undefined" 
+                                && options.dialog_rbtn_url.length > 0) {
+                            window.location.href = options.dialog_rbtn_url;
+                        } else {
+                            $(this).dialog('close');
+                        }
+                    }
+                };
+            } else {
+                buttons[0]= {
+                    'text': options.dialog_btn_text,
+                    'class': 'dialog_button',
+                    'click': function() {
+                        if(error) {
+                            $(this).dialog('close');
+                        } else {
+                            window.location.href = options.dialog_redirect_url;
+                        }
+                    }
+                };
+            }
+            $(options.dialog_ele).dialog({
+                'autoOpen': false,
+                'modal': true,
+                'width': options.dialog_width,
+                'buttons': buttons
+            });
+            var text = '';
+            if(error) {
+                if(err_status == 8) {
+                    text = options.dialog_text_err.replace('template_title', title)
+                } else {
+                    text = error;
+                }
+            } else {
+                text = options.dialog_text.replace('template_title', title)
+            }
+            $(options.dialog_ele)
+            .html(text)
+            .dialog('open');
+        }
+    }
+
+    return tmplCopyer;
+})($)

@@ -1,0 +1,39 @@
+if(location.host.indexOf('mgd5.com') != -1){
+	window._mrmcp = window._mrmcp || {}
+	_mrmcp.ticketUrl = "//card.mugeda.com/weixin/card/tickets/default_wx_js_ticket.json";
+	_mrmcp.weixinAppId = 'wx75babd529e23776c';
+}
+else if(location.host.indexOf('h5mc.com') != -1){
+	window._mrmcp = window._mrmcp || {}
+	_mrmcp.ticketUrl="//card.mugeda.com/weixin/card/tickets/case_wx_js_ticket.json";
+	_mrmcp.weixinAppId = 'wx5b0e5c28d5a6b1ad';
+}
+else if(location.host.indexOf('imugeda.com') != -1){
+	window._mrmcp = window._mrmcp || {}
+	_mrmcp.ticketUrl="//card.mugeda.com/weixin/card/tickets/ling_wx_js_ticket.json";
+	_mrmcp.weixinAppId = 'wx1dcb33234bc9333c';
+}
+else if(location.host.indexOf('h5mugeda.com') != -1){
+	window._mrmcp = window._mrmcp || {};
+	_mrmcp.ticketUrl = "//card.mugeda.com/weixin/card/tickets/default_wx_js_ticket.json";
+	_mrmcp.weixinAppId = 'wx75babd529e23776c';
+}
+else if(location.host.indexOf('mugeda.com') != -1){
+	window._mrmcp = window._mrmcp || {}
+	_mrmcp.ticketUrl = "//card.mugeda.com/weixin/card/tickets/default_wx_js_ticket.json";
+	_mrmcp.weixinAppId = 'wx75babd529e23776c';
+}
+else if(location.host.indexOf('h5mgd.com') != -1){
+	window._mrmcp = window._mrmcp || {}
+	_mrmcp.ticketUrl="//card.mugeda.com/weixin/card/tickets/ling_wx_js_ticket.json";
+	_mrmcp.weixinAppId = 'wx1dcb33234bc9333c';
+}
+else if(location.host.indexOf('mgdh5.com') != -1){
+	window._mrmcp = window._mrmcp || {}
+	_mrmcp.ticketUrl="//card.mugeda.com/weixin/card/tickets/da_wx_js_ticket.json";
+	_mrmcp.weixinAppId = 'wx0da814b613991d9f';
+}
+
+if(location.href.indexOf('m_qiushi=') > -1){
+	document.write('<script src="//card.mugeda.com/scripts/qiushi.js"><\/script>');
+}

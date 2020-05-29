@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>个人简历</title>
+	  <link rel="stylesheet" href="css/animate.css" />
+	  <link rel="stylesheet" href="css/reset.min.css" />
+	  <link rel="stylesheet" href="css/swiper.css" />
+	  <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript">
+    	~function () {
+            let computed = function () {
+                let desW = 750; //设计稿的宽度
+                let devW = document.documentElement.clientWidth;//获取设备的宽度
+                if (devW>=750){
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+                document.documentElement.style.fontSize = devW/desW*100+'px';//设备的宽度/设计稿的宽度*100
+            };
+            computed();
+            window.addEventListener('resize',computed(),false);
+        }();
+   		
+    </script>
+</head>
+<body>
+	<section class="main">
+		<!--loading -->
+		<section class="loading">
+			<div class="moveImg">
+				<img src="imges/5b2ca7b4e91c61304971c581.gif"alt=""/>
+			</div>
+			<div class="progress">
+				<div class="run"></div>
+			</div>
+		</section>
+		<!--catalog-->
+		<section class="catalog">
+			<div class="infoWrap">
+				<div class="head"></div>
+				<div class="item">
+					<div class="name">姓名:梁鑫芝</div>
+					<div class="tel">tel:15675180287</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="btmImg">
+				<img src="imges/5967af3d92b5792ce206e2d2.gif"/>
+				</div>
+				<div class="brief">
+					个人简介
+				</div>
+				<div class="works">
+					项目作品
+				</div>
+			</div>	
+		</section>
+		<!--infoWrap个人简介-->
+		<section class="infoWraps">
+			<img  class="one" src="imges/5967af3d92b5792ce206e2d2.gif"/>
+			<img class="two" src="imges/5967af3d92b5792ce206e2d2.gif"/>
+			<div class="itemImg">
+				<img src="imges/5967af3d92b5792ce206e2d2.gif"/>
+			</div>
+			<div class="manInfo"></div>
+			<div class="manWrap">
+				<div class="brief">
+					个人信息
+				</div>
+				<div class="brief">
+					项目经历
+				</div>
+				<div class="brief">
+					自我评价	
+				</div>
+				<div class="brief">
+					专业技能
+				</div>
+			</div>
+			<div class="wrapDetalis">
+				<div class="details">
+					<div class="brief">
+					个人信息
+					</div>
+					<div class="content">
+						<div class="icon"></div>
+						<div class="info">
+							广西梧州  <br/>
+							未婚 <br/>
+							大专 (软件技术) <br/>
+							1996 .12 .1 <br/>
+							15675180287 <br/>
+							925916955@qq.com <br/>	
+									
+						</div>
+					</div>
+				</div>
+				
+				<div class="details">
+					<div class="brief">
+					项目经历
+					</div>
+					<div class="content">
+						完成了一个Vue电商系统,Wep App,
+						包括商家,购物车,用户,收藏等多个子模块
+						使用了vue全家桶+ES6等前端热门技术,
+						采用了模块化,组件化,工程化等模式开发
+						用到的插件有swiper轮播滑动,滑动库:Better-scroll
+						还采用了vant,Lazyload 懒加载等
+						前后台交互
+						接口测试:postman
+						Ajax请求:axios,
+						
+					</div>
+				</div>
+				
+				<div class="details">
+					<div class="brief">
+					自我评价
+					</div>
+					<div class="content">
+						脚踏实地，认真细致”是我一向的工作态度。
+						疫情期间在家里学习了4个月的软件课程,我学会了移动端响应式开发,
+						更加熟悉了flex布局,代码优化,编写代码时候的一些一些优化技巧
+						JS尽量减少闭包的使用,CSS选择器优化等
+						学会了单列模式,微信小程序的一些基本操作,
+						VUE,LESS,vant,swiper,zpeto,git命令,H5打包等技术,
+						懂得了移动端/PC端的一些基本开发
+						
+						
+					</div>
+				</div>
+				
+				<div class="details">
+					<div class="brief">
+					专业技能
+					</div>
+					<div class="content">
+						熟悉javascript,html5,css3的用法,对栈堆内存有一定的了解,
+						掌握vuex,
+						vue-router,axios,es6,jquery,zpeto的基本用法,
+						会运用git同步github,H5打包,有vue商城系统经验,
+						这个商城系统运用rem布局,跨域代理,单点登录,localStorage储存,
+						vuex管理,动态路由,vant轻提示,Better-scroll滑动,懒加载等热门技术
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--infoWrap结束 个人简介-->
+		
+		<!--设计的作品-->
+		<section class="demoWrap">
+			<img class="one" src="imges/5967af3d92b5792ce206e2d2.gif">
+			<img class="two" src="imges/5967af3d92b5792ce206e2d2.gif">
+			<div class="itemImg">
+				<img src="imges/59690164347a1944ea35e63c.png">
+			</div>
+			<div class="manInfo">
+				<img src="imges/5b2ca7b4e91c61304971c581.gif"/>
+			</div>
+			<div class="manWrap">
+				<div class="brief">
+					<a href="http://3172312y5r.eicp.vip/">vue商城系统</a>
+				</div>
+				<div class="brief">
+					个人简历
+				</div>
+				<div class="brief">
+					<a href="https://lxzdemo.github.io/tianmao/">PC端页面</a>
+				</div>
+				<div class="brief">
+					GitHub
+				</div>
+			</div>
+		</section>
+		<!--设计的作品结束-->
+		
+		<!--联系方式-->
+		<section class="callWrap">
+			<div class="top">
+						<img src="imges/5967af3d92b5792ce206e2d2.gif"/>
+			</div>
+			<div class="infomain">
+				姓名:梁鑫芝<br />
+				微信/电话 <br/>
+				tel:17775754524
+			</div>
+			<div class="manMove">
+						<img src="imges/5b2e1518e91c613032702aa0.gif"/>
+			</div>
+			<div class="dtn">
+				<img src="imges/5967b87992b5792c127ba6ac.gif"/>
+			</div>
+		</section>
+		<!--联系方式-->
+		<div class="btn">
+				<div class="left"></div>
+				<div class="left1"></div>
+				<div class="center">
+					<div class="home"></div>
+					<div class="info"></div>
+					<div class="demo"></div>
+					<div class="call"></div>
+				</div>
+				<div class="right" style="opacity: 0;">
+				
+				</div>
+			</div>
+	</section>
+	
+	<script type="text/javascript" src="js/zpeto.min.js" ></script>
+	<script src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/index.js" ></script>
+	<script src="js/prif.js"></script>
+</body>
+</html>
