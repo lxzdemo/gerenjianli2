@@ -82,7 +82,8 @@ let catalogModel = (function(){
 	let $detailsBrief = $details.find(".brief");
 	let $demo = $center.find(".demo");
 	
-	
+	let $listenMusic = $("#listenMusic")[0];
+	let $listenMusic2 = $("#listenMusic2")[0];
 		//项目作品
 	let $demoWrap  = $(".demoWrap");	
 	
@@ -94,11 +95,13 @@ let catalogModel = (function(){
 		$left.tap(function(){
 			$center.css("width","70%");
 			$left1.css("display","block");
+			$listenMusic2.play();
 			return;
 		})
 		$left1.tap(function(){
 			$center.css("width","0");
 			$left1.css("display","none");
+			$listenMusic2.play();
 			return;
 		})
 	}
@@ -107,6 +110,7 @@ let catalogModel = (function(){
 		$home.tap(function(){
 			$catalog.css("display","block");
 			$infoWraps.css("display","none");
+			$listenMusic2.play();
 		})
 	}
 	//简介区域
@@ -116,12 +120,14 @@ let catalogModel = (function(){
 			$catalog.css("display","none");
 			$infoWraps.css("display","block");
 			$wrapDetalis.css("display","none");
+			$listenMusic2.play();
 		})
 		
 		$info.tap(function(){
 			$catalog.css("display","none");
 			$infoWraps.css("display","block");
 			$wrapDetalis.css("display","none");
+			$listenMusic2.play();
 		})
 		
 		//显示个人信息
@@ -129,6 +135,7 @@ let catalogModel = (function(){
 			$brief.eq(index).tap(function(){
 				$wrapDetalis.css("display","block");
 				$details.eq(index).css("display","block");
+				$listenMusic2.play();
 			})
 		})
 		
@@ -137,6 +144,7 @@ let catalogModel = (function(){
 			$detailsBrief.eq(index).tap(function(){
 				$wrapDetalis.css("display","none");
 				$details.eq(index).css("display","none");
+				$listenMusic2.play();
 			})
 		})
 		
@@ -146,12 +154,14 @@ let catalogModel = (function(){
 			$infoWraps.css("display","none");
 			$wrapDetalis.css("display","none");
 			$demoWrap.css("display","block");
+			$listenMusic2.play();
 		})
 		$works.tap(function(){
 			$catalog.css("display","none");
 			$infoWraps.css("display","none");
 			$wrapDetalis.css("display","none");
 			$demoWrap.css("display","block");
+			$listenMusic2.play();
 		})
 		//联系方式
 		$call.tap(function(){
@@ -160,6 +170,7 @@ let catalogModel = (function(){
 			$wrapDetalis.css("display","none");
 			$demoWrap.css("display","none");
 			$callWrap.css("display","block");
+			$listenMusic2.play();
 		})
 	}
 	
@@ -171,6 +182,8 @@ let catalogModel = (function(){
 			homeFn();
 			//简介
 			briefIntroduction();
+			
+			$listenMusic.play();
 		}
 	}
 })();
